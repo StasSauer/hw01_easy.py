@@ -1,0 +1,28 @@
+__author__ = 'Колмаков Станислав Витальевич'
+
+fruits = ["яблоко", "банан", "киви", "арбуз"]
+
+i = 0
+while len(fruits) > i:
+    print(i+1, "{0:>6}".format(fruits[i]))
+    i += 1
+
+
+
+word = ["hel", "hi", "lol", "hi"]
+word1 = ["hello", "hi", "lol", "hi"]
+print(set(word)-set(word1))
+
+
+
+random_list = [1, 2, 5, 10, 23, 22, 24]
+
+other_list = []
+
+last_name = len(random_list)
+for i in range(last_name):
+    if random_list[i] % 2 == 0:
+        other_list.append(random_list[i] / 4)
+    else:
+        other_list.append(random_list[i] * 2)
+print(other_list)
